@@ -1,3 +1,6 @@
+/* Note: For better maintainability, you might consider moving these rules
+   into style.css, directly below the selectors they modify. */
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 70vh;
@@ -46,19 +49,21 @@
     height: 40vh;
   }
   #profile {
-    height:83 vh;
+    /* Corrected typo from "83 vh" to "83vh" */
+    height: 83vh;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
-  footer-nav {
+  footer nav { /* Corrected selector from "footer-nav" */
     height: fit-content;
     margin-bottom: 2rem;
   }
   .about-containers, 
   .contact-info-upper-container, 
-  btn-container {
+  /* Corrected selector from "btn-container" to ".btn-container" */
+  .btn-container {
     flex-wrap: wrap;
   }
   .contact-info-container {
@@ -67,30 +72,30 @@
   .contact-info-container p, 
   .nav-links li a {
     font-size: 1rem;
-}
-.experience-sub-title {
-  font-size: 1.25rem;
-}
-.logo {
-  font-size: 1.5rem;
-}
-.nav-links {
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-.section__pic-container {
-  width: auto;
-  height: 46vw;
-  justify-content: center;
-}
-.section__text__p2 {
-font-size: 1.25rem;
-}
-.title {
-  font-size: 2rem;
-}
-.text-container {
-  text-align: justify;
-}
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
 }
