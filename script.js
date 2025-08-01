@@ -167,19 +167,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // FPGA Digital Clock Project
-    const fpgaGithubBtn = document.querySelector('[data-project="fpga-clock"] .btn-color-2');
-    const fpgaDocsBtn = document.querySelector('[data-project="fpga-clock"] .btn-color-1');
+    // Sumobot Robowars Project
+    const sumobotLinkedInBtn = document.querySelector('[data-project="sumobot-robowars"] .btn-color-1');
     
-    if (fpgaGithubBtn) {
-        fpgaGithubBtn.addEventListener('click', () => {
-            window.open('https://github.com/Hellzonedevil/fpga-digital-clock', '_blank');
-        });
-    }
-    
-    if (fpgaDocsBtn) {
-        fpgaDocsBtn.addEventListener('click', () => {
-            window.open('./assets/fpga-clock-documentation.pdf', '_blank');
+    if (sumobotLinkedInBtn) {
+        sumobotLinkedInBtn.addEventListener('click', () => {
+            window.open('https://www.linkedin.com/posts/ssr55_robowars-stem-engineering-activity-7347976965779243008-h-Bk?utm_source=share&utm_medium=member_desktop&rcm=ACoAADNTxGwBrImmSNXiL213VqDfhAaL3jH0YY0', '_blank');
         });
     }
 
