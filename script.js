@@ -176,19 +176,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Task Management App
-    const taskAppGithubBtn = document.querySelector('[data-project="task-app"] .btn-color-2');
-    const taskAppPreviewBtn = document.querySelector('[data-project="task-app"] .btn-color-1');
+    // ChatHaven Communication App
+    const chathavenGithubBtn = document.querySelector('[data-project="chathaven"] .btn-color-2');
+    const chathavenPresentationBtn = document.querySelector('[data-project="chathaven"] .btn-color-1');
     
-    if (taskAppGithubBtn) {
-        taskAppGithubBtn.addEventListener('click', () => {
-            window.open('https://github.com/Hellzonedevil/task-management-app', '_blank');
+    if (chathavenGithubBtn) {
+        chathavenGithubBtn.addEventListener('click', () => {
+            window.open('https://github.com/First-Time-Coders/FirstTimeCoders-SOEN341_Project_W25.git', '_blank');
         });
     }
     
-    if (taskAppPreviewBtn) {
-        taskAppPreviewBtn.addEventListener('click', () => {
-            showNotification('Project preview coming soon! 🚀', 'info');
+    if (chathavenPresentationBtn) {
+        chathavenPresentationBtn.addEventListener('click', () => {
+            // You'll need to upload the PDF to your assets folder and update this path
+            window.open('./assets/chathaven-presentation.pdf', '_blank');
         });
     }
 
