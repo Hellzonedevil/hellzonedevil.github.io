@@ -53,35 +53,37 @@
             </div>
         </div>
     </section>
-    <section id="about">
-        <p class="section__text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-               <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" /> 
+ <!-- Updated About Section based on resume -->
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                    <h3>Experience</h3>
+                    <p>3+ Years<br />Engineering & Leadership</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon" />
+                    <h3>Education</h3>
+                    <p>B.Eng Computer Engineering Co-op<br />Concordia University (2023-2027)</p>
+                </div>
             </div>
-            <div class="about-details-container">
-                <div class ="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>2+ years <br />Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am a passionate computer engineering student with a strong foundation in web development. I specialize in creating responsive and user-friendly websites using modern technologies like HTML, CSS, and JavaScript. I am eager to apply my skills in a professional setting and contribute to exciting projects.
-                    </p>
-                </div>
+            <div class="text-container">
+                <p>
+                    I am a Computer Engineering Co-op student at Concordia University with expertise spanning hardware and software development. I specialize in embedded systems, robotics, and full-stack web development, having led competitive robotics projects and built communication platforms using modern technologies.
+                </p>
+                <br>
+                <p>
+                    As Director of Academics at IEEE Concordia, I lead technical workshops and coordinate interdisciplinary teams. I thrive in collaborative environments, working with everything from STM32 microcontrollers to Django web applications, always focusing on innovative solutions.
+                </p>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
     <section id="experience">
          <p class="section__text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
@@ -775,22 +777,25 @@
             </div>
         </div>
 
-        <!-- Project 4: ARM Assembly Calculator -->
-        <div class="project-card" data-category="completed" data-project="arm-calculator">
+        <!-- Project 4: Autonomous Hovercraft -->
+        <div class="project-card" data-category="completed" data-project="autonomous-hovercraft">
             <div class="project-status status-completed">Completed</div>
-            <div class="project-image">🔢</div>
-            <h3 class="project-title">ARM Assembly Calculator</h3>
+            <div class="project-image">
+                <img src="./assets/hovercraft-image.jpg" alt="Autonomous Hovercraft with blue fans and control system" />
+            </div>
+            <h3 class="project-title">Autonomous Hovercraft - Design & Build</h3>
             <p class="project-description">
-                A scientific calculator implemented in ARM assembly language. Supports basic arithmetic operations and mathematical functions with optimized performance.
+                Designed and built an Arduino-controlled autonomous hovercraft capable of navigating a maze using IR and ultrasonic sensors. Led a team of 5, ranking top 5 out of 20 teams with 95% obstacle detection accuracy.
             </p>
             <div class="project-tech-stack">
-                <span class="tech-tag">ARM Assembly</span>
+                <span class="tech-tag">Arduino</span>
                 <span class="tech-tag">C</span>
-                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Sensor Integration</span>
+                <span class="tech-tag">Autonomous Navigation</span>
+                <span class="tech-tag">Team Leadership</span>
             </div>
             <div class="project-buttons">
-                <button class="btn btn-color-2 project-btn">GitHub</button>
-                <button class="btn btn-color-1 project-btn">Demo Video</button>
+                <button class="btn btn-color-2 project-btn" style="width: 100%;">GitHub</button>
             </div>
         </div>
 
@@ -837,7 +842,6 @@
     
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
 </section>
-
     <script>
    // Projects Section Filtering Functionality
 document.addEventListener('DOMContentLoaded', () => {

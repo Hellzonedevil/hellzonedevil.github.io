@@ -193,19 +193,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ARM Assembly Calculator
-    const armGithubBtn = document.querySelector('[data-project="arm-calculator"] .btn-color-2');
-    const armDemoBtn = document.querySelector('[data-project="arm-calculator"] .btn-color-1');
+    // Autonomous Hovercraft Project
+    const hovercraftGithubBtn = document.querySelector('[data-project="autonomous-hovercraft"] .btn-color-2');
     
-    if (armGithubBtn) {
-        armGithubBtn.addEventListener('click', () => {
-            window.open('https://github.com/Hellzonedevil/arm-assembly-calculator', '_blank');
-        });
-    }
-    
-    if (armDemoBtn) {
-        armDemoBtn.addEventListener('click', () => {
-            window.open('https://youtube.com/watch?v=your-demo-video', '_blank');
+    if (hovercraftGithubBtn) {
+        hovercraftGithubBtn.addEventListener('click', () => {
+            window.open('https://github.com/FabioKoshy/HoverCraft-290-.git', '_blank');
         });
     }
 

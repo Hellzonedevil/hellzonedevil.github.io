@@ -443,6 +443,7 @@ section {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--border-primary);
     box-shadow: var(--shadow-lg);
+    text-align: center;
 }
 
 /* Hide the about section profile image */
