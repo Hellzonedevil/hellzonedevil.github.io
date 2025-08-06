@@ -151,22 +151,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Project Button Handlers ---
     
-    // Portfolio Project Buttons
-    const portfolioGithubBtn = document.querySelector('[data-project="portfolio"] .btn-color-2');
-    const portfolioLiveBtn = document.querySelector('[data-project="portfolio"] .btn-color-1');
-    
-    if (portfolioGithubBtn) {
-        portfolioGithubBtn.addEventListener('click', () => {
-            window.open('https://github.com/Hellzonedevil/portfolio-website', '_blank');
-        });
-    }
-    
-    if (portfolioLiveBtn) {
-        portfolioLiveBtn.addEventListener('click', () => {
-            window.open('https://your-portfolio-url.com', '_blank');
-        });
-    }
+   // Digital Room Occupancy Counter Project
+const roomOccupancyGithubBtn = document.querySelector('[data-project="room-occupancy-counter"] .btn-color-2');
 
+if (roomOccupancyGithubBtn) {
+    roomOccupancyGithubBtn.addEventListener('click', () => {
+        createRippleEffect(roomOccupancyGithubBtn, event);
+        setTimeout(() => {
+            window.open('https://github.com/Hellzonedevil/FPGA-Based-Room-Occupancy-Monitoring-System.git', '_blank');
+        }, 200);
+    });
+}
     // Sumobot Robowars Project
     const sumobotLinkedInBtn = document.querySelector('[data-project="sumobot-robowars"] .btn-color-1');
     
